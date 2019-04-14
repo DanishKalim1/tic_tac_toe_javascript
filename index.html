@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Toc Toe</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+h1{
+  font-family: 'Baloo Chettan', cursive;
+  border-bottom: 1px solid black;
+}
+.Square{
+  height: 80px;
+  width:80px;
+  font-size: 45pt;
+  text-align: center;
+}
+#message{
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 18pt;
+}
+body{
+  width:550px;
+  margin:auto;
+  background: #EAF2EF;
+}
+
+#restart{
+  font-size: 18pt;
+  font-family: font-family: 'Baloo Chettan', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+  </style>
+</head>
+<body onload="startGame();">
+  <h1>Tic Tac Toe Game In Javascript</h1>
+  <div id="message">
+    Message Here
+  </div>
+  <table border = "1">
+    <tr>
+    <td class="Square" id="s1" onClick="nextMove(this)"></td>
+    <td class="Square" id="s2" onClick="nextMove(this)"></td>
+    <td class="Square" id="s3" onClick="nextMove(this)"></td>
+  </tr>
+  <tr>
+  <td class="Square" id="s4" onClick="nextMove(this)"></td>
+  <td class="Square" id="s5" onClick="nextMove(this)"></td>
+  <td class="Square" id="s6" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td class="Square" id="s7" onClick="nextMove(this)"></td>
+<td class="Square" id="s8" onClick="nextMove(this)"></td>
+<td class="Square" id="s9" onClick="nextMove(this)"></td>
+</tr>
+  </table>
+  <a href="javascript: startGame();" id="restart">Play Again</a>
+  <script src="scripts.js"></script>
+</body>
+</html>
